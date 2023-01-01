@@ -6,4 +6,6 @@ def index(request):
     name='Adam'
     return render(request, 'index.html',{'name':name})
 def count(request):
-    return render(request,'count.html')
+    words=request.GET['text']
+    amount=len(words.split())
+    return render(request,'count.html',{'amount':amount})
