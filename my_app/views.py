@@ -5,3 +5,5 @@ from django.http import HttpResponse
 def index(request):
     name='Adam'
     return render(request, 'index.html',{'name':name})
+def cout(request):
+    return render(request,'count.html')
