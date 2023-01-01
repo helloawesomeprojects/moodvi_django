@@ -1,5 +1,6 @@
 <h1>Here the form</h1>
-<form method="" action="count">
+<form method="POST" action="count">
+    {% csrf_token %}
     <textarea name="text" rows="10" cols="30"></textarea><br>
     <input type="submit">
 </form>
